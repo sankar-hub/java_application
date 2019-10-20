@@ -7,7 +7,7 @@ pipeline {
         stage('Build') { 
             steps {
       
-                sh 'sudo mvn package'
+                sh '-u root mvn package'
             }
         }
        stage('SonarQube analysis') { 
