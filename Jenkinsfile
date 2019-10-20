@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'sudo su -'
+                sh 'sudo -su root'
                 sh 'mvn package'
             }
         }
