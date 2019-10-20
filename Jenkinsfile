@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        maven 'M2_HOME' 
+        maven '/opt/apache-maven-3.6.2' 
     }
     stages {
         stage('Build') { 
