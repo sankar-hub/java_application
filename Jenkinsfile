@@ -5,9 +5,8 @@ pipeline {
     }
     stages {
         stage('Build') { 
-            steps {
-      
-                sh '-u root mvn package'
+            steps {      
+                sh 'mvn package'
             }
         }
        stage('SonarQube analysis') { 
